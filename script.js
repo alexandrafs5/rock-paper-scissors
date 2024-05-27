@@ -53,6 +53,7 @@ function playGame() {
     }
 
     for (let i = 0; i < 5; i++) {
+        console.log("ROUND: " + (i + 1));
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice(1, 3);
         playRound(humanSelection, computerSelection);
@@ -61,4 +62,5 @@ function playGame() {
     }
 }
 
+console.log("WELCOME TO ROCK, PAPER, SCISSORS!!!!!!!!!");
 playGame();
