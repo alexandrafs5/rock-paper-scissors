@@ -27,10 +27,14 @@ function playGame() {
     function playRound(humanChoice, computerChoice) {
         if (computerChoice === humanChoice) {
             console.log("That's a draw!");
-        } else  if ((computerChoice === "Rock" && humanChoice === "Paper") || (computerChoice === "Paper" && humanChoice === "Scissors") || (computerChoice === "Scissors" && humanChoice === "Rock")) {
+        } else  if ((computerChoice === "Rock" && humanChoice === "Paper") || 
+                    (computerChoice === "Paper" && humanChoice === "Scissors") || 
+                    (computerChoice === "Scissors" && humanChoice === "Rock")) {
             console.log("You win!");
             humanScore += 1;
-        } else if ((computerChoice === "Rock" && humanChoice === "Scissors") || (computerChoice === "Paper" && humanChoice === "Rock") || (computerChoice === "Scissors" && humanChoice === "Paper")) {
+        } else if ((computerChoice === "Rock" && humanChoice === "Scissors") || 
+                   (computerChoice === "Paper" && humanChoice === "Rock") || 
+                   (computerChoice === "Scissors" && humanChoice === "Paper")) {
             console.log("You lose!");
             computerScore += 1;
         }
