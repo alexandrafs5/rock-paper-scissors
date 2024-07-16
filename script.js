@@ -1,13 +1,23 @@
 function getComputerChoice(min, max) {
     let computerChoice = Math.floor(Math.random() * (max - min + 1) ) + min;
+    const computerImage = document.querySelector(".computerImage");
     if (computerChoice === 1) {
-        console.log("Computer choice: Rock");
+        //console.log("Computer choice: Rock");
+        computerImage.setAttribute("src", "../rock-paper-scissors/images/rock.png");
+        computerImage.setAttribute("width", "225px");
+        computerImage.setAttribute("height", "225px");
         return "Rock";
     } else if (computerChoice === 2) {
-        console.log("Computer choice: Paper");
+        //console.log("Computer choice: Paper");
+        computerImage.setAttribute("src", "../rock-paper-scissors/images/paper.png");
+        computerImage.setAttribute("width", "225px");
+        computerImage.setAttribute("height", "225px");
         return "Paper";
     } else {
-        console.log("Computer choice: Scissors");
+        //console.log("Computer choice: Scissors");
+        computerImage.setAttribute("src", "../rock-paper-scissors/images/scissors.png");
+        computerImage.setAttribute("width", "225px");
+        computerImage.setAttribute("height", "225px");
         return "Scissors";
     }
 }
@@ -25,17 +35,25 @@ function getComputerChoice(min, max) {
     //let computerScore = 0;
 
     function playRound(humanChoice, computerChoice) {
+        const results = document.querySelector(".results");
+        const explaining = document.querySelector(".explaining");
         if (computerChoice === humanChoice) {
-            console.log("That's a draw!");
+            results.textContent = "That's a draw!";
+            explaining.textContent = "";
+            //console.log("That's a draw!");
         } else  if ((computerChoice === "Rock" && humanChoice === "Paper") || 
                     (computerChoice === "Paper" && humanChoice === "Scissors") || 
                     (computerChoice === "Scissors" && humanChoice === "Rock")) {
-            console.log("You win!");
+            results.textContent = "You win!";
+            explaining.textContent = "";
+            //console.log("You win!");
             //humanScore += 1;
         } else if ((computerChoice === "Rock" && humanChoice === "Scissors") || 
                    (computerChoice === "Paper" && humanChoice === "Rock") || 
                    (computerChoice === "Scissors" && humanChoice === "Paper")) {
-            console.log("You lose!");
+            results.textContent = "You lose!";
+            explaining.textContent = "";
+            //console.log("You lose!");
             //computerScore += 1;
         }
     }
@@ -53,20 +71,31 @@ const rock = document.querySelector(".rock");
 const paper = document.querySelector(".paper");
 const scissors = document.querySelector(".scissors");
 
+const playerImage = document.querySelector(".playerImage");
+
 rock.addEventListener("click", function() {   
-    console.log("Your choice: Rock");
+    //console.log("Your choice: Rock");
+    playerImage.setAttribute("src", "../rock-paper-scissors/images/rock.png");
+    playerImage.setAttribute("width", "225px");
+    playerImage.setAttribute("height", "225px");
     const humanSelection = "Rock";
     const computerSelection = getComputerChoice(1, 3);
     playRound(humanSelection, computerSelection);
 });
 paper.addEventListener("click", function() {
-    console.log("Your choice: Paper");
+    //console.log("Your choice: Paper");
+    playerImage.setAttribute("src", "../rock-paper-scissors/images/paper.png");
+    playerImage.setAttribute("width", "225px");
+    playerImage.setAttribute("height", "225px");
     const humanSelection = "Paper";
     const computerSelection = getComputerChoice(1, 3);
     playRound(humanSelection, computerSelection);
 });
 scissors.addEventListener("click", function() {
-    console.log("Your choice: Scissors");
+    //console.log("Your choice: Scissors");
+    playerImage.setAttribute("src", "../rock-paper-scissors/images/scissors.png");
+    playerImage.setAttribute("width", "225px");
+    playerImage.setAttribute("height", "225px");
     const humanSelection = "Scissors";
     const computerSelection = getComputerChoice(1, 3);
     playRound(humanSelection, computerSelection);
