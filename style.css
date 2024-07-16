@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #CCD1D1;
+    text-align: center;
+    padding: 36px 0;
+    font-size: 56px;
+    color: #A82152;
+}
+
+.images-rps {
+    width: 200px;
+    height: 200px;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.game {
+    text-align: center;
+}
