@@ -3,11 +3,10 @@ body {
 }
 
 .header {
-    background-color: #CCD1D1;
     text-align: center;
-    padding: 36px 0;
     font-size: 56px;
-    color: #A82152;
+    margin: 0;
+    padding: 8px 0;
 }
 
 .images-rps {
@@ -31,4 +30,22 @@ body {
 
 .game {
     text-align: center;
+
+    padding: 16px 0;
+}
+
+.background {
+    background-image: url("../rock-paper-scissors/images/background.jpg");
+    padding: 16px 500px;
+}
+
+.button {
+    border-radius: 50%;
+    border-color: #6E2C00;
+    border-width: 4px;
+    border-style: dotted;
+}
+
+.child {
+    
 }
