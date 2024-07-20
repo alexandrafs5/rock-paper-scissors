@@ -37,10 +37,13 @@ body {
     border-width: 8px;
     border-color: #5AB26A;
     background-color: white;
+    padding: 4px 5%;
 }
 
 .background {
-    padding: 16px 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
