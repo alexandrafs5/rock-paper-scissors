@@ -40,7 +40,7 @@ body {
     padding: 4px 5%;
 }
 
-.background {
+body {
     display: flex;
     align-items: center;
     justify-content: center;
