@@ -1,5 +1,12 @@
 # rock-paper-scissors
 
+Live: https://alexandrafs5.github.io/rock-paper-scissors/
+
+Rock Paper Scissors game created with HTML, CSS and JavaScript
+
+`Made for Desktop only`
+
+images from:
 https://en.silhouette-ac.com/silhouette/140217
 https://en.silhouette-ac.com/silhouette/140215
 https://en.silhouette-ac.com/silhouette/140216
