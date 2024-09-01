@@ -66,6 +66,8 @@ function playRound(humanChoice, computerChoice) {
         scoreComputer.textContent = "Player won " + humanScore + ":" + computerScore;
         const winPlayerImage = document.createElement('img');
         winPlayerImage.setAttribute("src", "../rock-paper-scissors/images/player.png");
+        winPlayerImage.setAttribute("width", "225px");
+        winPlayerImage.setAttribute("height", "225px");
         holder.appendChild(winPlayerImage);
         while (buttons.firstChild) {
             buttons.removeChild(buttons.firstChild);
@@ -86,6 +88,8 @@ function playRound(humanChoice, computerChoice) {
         scoreComputer.textContent = "Computer won " + computerScore + ":" + humanScore;
         const winComputerImage = document.createElement('img');
         winComputerImage.setAttribute("src", "../rock-paper-scissors/images/robot.jpg");
+        winComputerImage.setAttribute("width", "225px");
+        winComputerImage.setAttribute("height", "225px");
         holder.appendChild(winComputerImage);
         while (buttons.firstChild) {
             buttons.removeChild(buttons.firstChild);
