@@ -16,6 +16,7 @@ const selector = document.querySelector(".selector");
 const child = document.querySelector(".child");
 const buttons = document.querySelector(".buttons");
 const textRounds = document.querySelector(".textRounds");
+const holder = document.querySelector(".holder");
 
 function getComputerChoice(min, max) {
     let computerChoice = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -61,8 +62,11 @@ function playRound(humanChoice, computerChoice) {
     if (humanScore == 5) {
         results.textContent = "YOU WON THE GAME!!!!!";
         const removeImages = selector.removeChild(child);
+        const removeImagesTwo = holder.removeChild(computerImage);
         scoreComputer.textContent = "Player won " + humanScore + ":" + computerScore;
-        computerImage.setAttribute("src", "../rock-paper-scissors/images/player.png");
+        const winPlayerImage = document.createElement('img');
+        winPlayerImage.setAttribute("src", "../rock-paper-scissors/images/player.png");
+        holder.appendChild(winPlayerImage);
         while (buttons.firstChild) {
             buttons.removeChild(buttons.firstChild);
         }
@@ -78,8 +82,11 @@ function playRound(humanChoice, computerChoice) {
     } else if (computerScore == 5) {
         results.textContent = "YOU LOST THE GAME!!!!!";
         const removeImages = selector.removeChild(child);
+        const removeImagesTwo = holder.removeChild(computerImage);
         scoreComputer.textContent = "Computer won " + computerScore + ":" + humanScore;
-        computerImage.setAttribute("src", "../rock-paper-scissors/images/robot.jpg");
+        const winComputerImage = document.createElement('img');
+        winComputerImage.setAttribute("src", "../rock-paper-scissors/images/robot.jpg");
+        holder.appendChild(winComputerImage);
         while (buttons.firstChild) {
             buttons.removeChild(buttons.firstChild);
         }
