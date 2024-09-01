@@ -76,6 +76,15 @@ function playRound(humanChoice, computerChoice) {
         textRounds.textContent = "";
         const playAgain = document.createElement("button");
         playAgain.textContent = "PLAY AGAIN";
+        playAgain.setAttribute("border-radius", "15px");
+        playAgain.setAttribute("border-color", "darkslategrey");
+        playAgain.setAttribute("border-width", "2px");
+        playAgain.setAttribute("border-style", "solid");
+        playAgain.setAttribute("padding", "10px 20px");
+        playAgain.setAttribute("min-width", "200px");
+        playAgain.setAttribute("background-color", "aliceblue");
+        playAgain.setAttribute("font-size", "16px");
+        playAgain.setAttribute("box-shadow", "10px 10px #D6EAF8");
         buttons.appendChild(playAgain);
 
         playAgain.addEventListener("click", function() {
@@ -98,6 +107,15 @@ function playRound(humanChoice, computerChoice) {
         textRounds.textContent = "";
         const playAgain = document.createElement("button");
         playAgain.textContent = "PLAY AGAIN";
+        playAgain.setAttribute("border-radius", "15px");
+        playAgain.setAttribute("border-color", "darkslategrey");
+        playAgain.setAttribute("border-width", "2px");
+        playAgain.setAttribute("border-style", "solid");
+        playAgain.setAttribute("padding", "10px 20px");
+        playAgain.setAttribute("min-width", "200px");
+        playAgain.setAttribute("background-color", "aliceblue");
+        playAgain.setAttribute("font-size", "16px");
+        playAgain.setAttribute("box-shadow", "10px 10px #D6EAF8");
         buttons.appendChild(playAgain);
 
         playAgain.addEventListener("click", function() {   
