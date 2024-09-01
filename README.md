@@ -2,7 +2,8 @@
 
 Live: https://alexandrafs5.github.io/rock-paper-scissors/
 
-Rock Paper Scissors game created with HTML, CSS and JavaScript
+Rock Paper Scissors game created with HTML, CSS and JavaScript.
+Played against the computer, the first to reach 5 point wins the game.
 
 `Made for Desktop only`
 
