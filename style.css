@@ -1,7 +1,11 @@
 body {
-    margin: 0;
+    margin: auto;
     background-color: #F7D6E1;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -40,17 +44,15 @@ body {
     padding: 4px 5%;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .button {
     border-radius: 50%;
     border-color: #BDA46C;
     border-width: 4px;
     border-style: dotted;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .results {
